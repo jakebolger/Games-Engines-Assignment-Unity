@@ -74,7 +74,7 @@ public class MeshGenerator : MonoBehaviour
                 vert++;
                 tris += 6;
 
-                yield return new WaitForSeconds(.01f);
+                yield return new WaitForSeconds(.001f);
             }
             vert++;
         }

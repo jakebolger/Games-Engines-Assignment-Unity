@@ -8,3 +8,5 @@ as possible.
 Guide to Procedural generation to possibly use https://gamedevacademy.org/complete-guide-to-procedural-level-generation-in-unity-part-1/
 
 Audio Visualizer Pinterest ideas https://www.pinterest.ie/search/pins/?q=audio%20visualizer&rs=typed&term_meta[]=audio%7Ctyped&term_meta[]=visualizer%7Ctyped
+
+Possibly change idea to a game instead of audio visualizer.

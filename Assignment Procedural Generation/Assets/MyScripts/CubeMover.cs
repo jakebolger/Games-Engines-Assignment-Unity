@@ -21,6 +21,6 @@ public class CubeMover : MonoBehaviour
     {
         int thrust = 10;
         //apply force
-        agentRigidbody.AddForce(0,0, thrust * agentSpeed);
+        agentRigidbody.AddForce(0,0, -thrust * agentSpeed);
     }
 }

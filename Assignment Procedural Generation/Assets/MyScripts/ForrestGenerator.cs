@@ -10,7 +10,7 @@ public class ForrestGenerator : MonoBehaviour
 
     public Element[] elements;
 
-    private void Start()
+    public void Generate(float[,] heightMap)
     {
         for (int x = 0; x < forestSize; x += elementSpacing)
         {
@@ -22,7 +22,8 @@ public class ForrestGenerator : MonoBehaviour
 
                     if (element.CanPlace())
                     {
-                        Vector3 position = new Vector3(x, -31.2f, z);
+                        //Vector3 position = new Vector3(x, -31.2f, z);
+                        Vector3 position = new Vector3(x, heightMap[x, z], z);
 
                         Vector3 offset = new Vector3(Random.Range(-0.75f, -0.75f), 0f, Random.Range(-0.75f, 0.75f));
 

@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4025460787508345845
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4025460787508345847}
+  - component: {fileID: 4025460787508345846}
+  m_Layer: 0
+  m_Name: Forrest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4025460787508345847
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4025460787508345845}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -11.22, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4025460787508345846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4025460787508345845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9b2fcd351747a640b46459fe6edc25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forestSize: 500
+  elementSpacing: 3
+  elements:
+  - name: Trees
+    density: 1
+    prefabs:
+    - {fileID: 3299961076591130292, guid: b2ab42f7a705d0e44ac3279b2c219851, type: 3}
+    - {fileID: 81627929765477059, guid: 32812925e2e35014a9dd15b698f5083e, type: 3}
+    - {fileID: 1967829353697711403, guid: e7e3129bbda910e4f9dad168195d64d8, type: 3}
+    - {fileID: 7176318563626507572, guid: a275d36a372500642995c3452af8e07c, type: 3}
+  - name: Bushes
+    density: 2
+    prefabs:
+    - {fileID: 7718925336293551472, guid: ab7aa749184c4b342835e6db75fd990b, type: 3}
+    - {fileID: 5739165404255009808, guid: 8e583982084fec143beb7897c33135d6, type: 3}
+  - name: Rocks
+    density: 7
+    prefabs:
+    - {fileID: 2967220610675468972, guid: aaeaaf6cdf50afa41946390052af1a4d, type: 3}
+    - {fileID: 2669672590162766590, guid: 7b6dab7187195fd4c995de2d20e541e4, type: 3}
+  - name: Grass
+    density: 10
+    prefabs:
+    - {fileID: 3725430967364367763, guid: 6ef5aebe5e1b4be4082ed41feef2748f, type: 3}

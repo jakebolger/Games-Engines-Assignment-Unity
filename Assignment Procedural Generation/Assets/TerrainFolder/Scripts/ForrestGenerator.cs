@@ -17,6 +17,9 @@ public class ForrestGenerator : MonoBehaviour
 
     public void Generate(float[,] heightMap)
     {
+        //looping from 0 to set forest size and incrementing by the element spacing
+        //this means every 3 units in unity we will put i elements down
+        //
         for (int x = 0; x < forestSize; x += elementSpacing)
         {
             for (int z = 0; z < forestSize; z += elementSpacing)
@@ -34,21 +37,36 @@ public class ForrestGenerator : MonoBehaviour
                         //
                         Vector3 position = new Vector3(x, heightMap[x, z], z);
 
+                        //new vector3 offset
+                        //creating a vector offset thats a random amount to vary position
+                        //
                         Vector3 offset = new Vector3(Random.Range(-0.75f, -0.75f), 0f, Random.Range(-0.75f, 0.75f));
 
+                        //creating a vector for rotation giving it a random rotation / tilted
+                        //
                         Vector3 rotation = new Vector3(Random.Range(0, 5f), Random.Range(0, 360f), Random.Range(0, 5f));
 
+                        //creating a vector for scale and randomizing it
+                        //
                         Vector3 scale = Vector3.one * Random.Range(0.75f, 1.25f);
                         
                         //creating new game object and instantiating the prefab
                         //
                         GameObject newElement = Instantiate(element.GetRandom());
+                        
+                        //setting the parent so the prefabs dont float around the hierarchy
+                        //
                         newElement.transform.SetParent(transform);
                         
                         //setting the elements position
                         //
                         newElement.transform.position = position + offset;
+                        
+                        //setting the euler angles to allow the trees to look less procedural
+                        //
                         newElement.transform.eulerAngles = rotation;
+                        //setting the scale
+                        //
                         newElement.transform.localScale = scale;
                         break;
                     }

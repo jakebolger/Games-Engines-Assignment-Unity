@@ -11,6 +11,8 @@ public class ForrestGenerator : MonoBehaviour
     //
     public int elementSpacing = 3;
 
+    //Array for elements to add prefabs to
+    //
     public Element[] elements;
 
     public void Generate(float[,] heightMap)
@@ -21,11 +23,15 @@ public class ForrestGenerator : MonoBehaviour
             {
                 for (int i = 0; i < elements.Length; i++)
                 {
+                    //Gets element
+                    //
                     Element element = elements[i];
 
                     if (element.CanPlace())
                     {
-                        //Vector3 position = new Vector3(x, -31.2f, z);
+                        //Vector3 position 
+                        //passing terrain heightmap into height
+                        //
                         Vector3 position = new Vector3(x, heightMap[x, z], z);
 
                         Vector3 offset = new Vector3(Random.Range(-0.75f, -0.75f), 0f, Random.Range(-0.75f, 0.75f));
@@ -33,9 +39,14 @@ public class ForrestGenerator : MonoBehaviour
                         Vector3 rotation = new Vector3(Random.Range(0, 5f), Random.Range(0, 360f), Random.Range(0, 5f));
 
                         Vector3 scale = Vector3.one * Random.Range(0.75f, 1.25f);
-
+                        
+                        //creating new game object and instantiating the prefab
+                        //
                         GameObject newElement = Instantiate(element.GetRandom());
                         newElement.transform.SetParent(transform);
+                        
+                        //setting the elements position
+                        //
                         newElement.transform.position = position + offset;
                         newElement.transform.eulerAngles = rotation;
                         newElement.transform.localScale = scale;

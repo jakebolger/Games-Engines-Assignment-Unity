@@ -30,6 +30,8 @@ public class ForrestGenerator : MonoBehaviour
                     //
                     Element element = elements[i];
 
+                    //if statement with CanPlace Function
+                    //
                     if (element.CanPlace())
                     {
                         //Vector3 position 
@@ -91,14 +93,18 @@ public class Element //Element class
     //name type of element prefab
     //
     public string name;
+    
+    //density integer that is locked to a range of 1 to 10
     [Range(1, 10)]
     public int density;
 
-    //Space for Prefab to go in inspector
+    //creating array Space for Prefabs to go in inspector
     //
     public GameObject[] prefabs;
 
-
+    //everytime we check this can place we get a random number between 0 and 10
+    //and if that number is below our density it returns true
+    //
     public bool CanPlace()
     {
         if (Random.Range(0, 10) < density)
@@ -107,6 +113,9 @@ public class Element //Element class
             return false;
     }
 
+    //class to get objects from the array created. GameObject[]
+    //returns game object
+    //
     public GameObject GetRandom()
     {
 

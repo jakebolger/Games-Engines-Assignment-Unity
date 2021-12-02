@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class ForrestGenerator : MonoBehaviour
 {
-
+    //integer that sets the size of the forest and allows you to change it in the inspector
+    //
     public int forestSize = 25;
+    //
     public int elementSpacing = 3;
 
     public Element[] elements;

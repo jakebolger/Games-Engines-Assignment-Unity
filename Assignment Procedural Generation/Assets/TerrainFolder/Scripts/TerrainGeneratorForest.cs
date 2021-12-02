@@ -10,6 +10,8 @@ public class TerrainGeneratorForest : MonoBehaviour
 
     public ForrestGenerator Forest;
 
+    //two dimensional array
+    //
     private float[,] heightMap;
 
     MeshFilter meshFilter;

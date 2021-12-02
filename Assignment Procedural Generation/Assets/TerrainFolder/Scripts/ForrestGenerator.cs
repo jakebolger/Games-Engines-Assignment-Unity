@@ -15,6 +15,8 @@ public class ForrestGenerator : MonoBehaviour
     //
     public Element[] elements;
 
+    //Generate function using terrainGeneratorForest 2 dimensional heightmap array
+    //
     public void Generate(float[,] heightMap)
     {
         //looping from 0 to set forest size and incrementing by the element spacing
@@ -26,7 +28,7 @@ public class ForrestGenerator : MonoBehaviour
             {
                 for (int i = 0; i < elements.Length; i++)
                 {
-                    //Gets element
+                    //Gets element, giving priority to trees
                     //
                     Element element = elements[i];
 
@@ -70,6 +72,9 @@ public class ForrestGenerator : MonoBehaviour
                         //setting the scale
                         //
                         newElement.transform.localScale = scale;
+                        
+                        //means if tree placed we are not looping to next element
+                        //
                         break;
                     }
                 }

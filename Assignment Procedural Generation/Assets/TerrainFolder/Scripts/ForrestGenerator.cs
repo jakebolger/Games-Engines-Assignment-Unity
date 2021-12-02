@@ -7,6 +7,7 @@ public class ForrestGenerator : MonoBehaviour
     //integer that sets the size of the forest and allows you to change it in the inspector
     //
     public int forestSize = 25;
+    //Spacing between elements e.g. trees, rocks, bushes etc.
     //
     public int elementSpacing = 3;
 
@@ -52,13 +53,20 @@ public class ForrestGenerator : MonoBehaviour
 
 }
 
+
+//Make it serializable because we are setting it in the inspector
+//
 [System.Serializable]
-public class Element
+public class Element //Element class 
 {
+    //name type of element prefab
+    //
     public string name;
     [Range(1, 10)]
     public int density;
 
+    //Space for Prefab to go in inspector
+    //
     public GameObject[] prefabs;
 
 

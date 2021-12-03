@@ -80,6 +80,7 @@ public class TerrainGeneratorForest : MonoBehaviour
     {
 
         // Initialise arrays and indexes we need for creating our mesh.
+        //
         Vector3[] vertices = new Vector3[terrainSize * terrainSize];
         int[] triangles = new int[(terrainSize - 1) * (terrainSize - 1) * 6];
         Vector2[] uvs = new Vector2[terrainSize * terrainSize];
@@ -88,6 +89,7 @@ public class TerrainGeneratorForest : MonoBehaviour
         int triIndex = 0;
 
         // Loop through each position in terrain, create necessary vertexs, indices, and UV coordinates.
+        //
         for (int x = 0; x < terrainSize; x++)
         {
             for (int z = 0; z < terrainSize; z++)
@@ -97,41 +99,51 @@ public class TerrainGeneratorForest : MonoBehaviour
                 uvs[vertIndex] = new Vector2((float)(x / terrainSize), (float)(z / terrainSize));
 
                 // Make sure we're not on the last row/column of the mesh as setting a triangle from there would create an indexOutOfBoundsException.
+                //
                 if (x < terrainSize - 1 && z < terrainSize - 1)
                 {
-
+                    //adding triangles, represent a quad with 4 point and draw the square with two triangles
+                    //
                     triangles[triIndex] = vertIndex;
-                    triangles[triIndex + 1] = vertIndex + terrainSize + 1;
+                    triangles[triIndex + 1] = vertIndex + terrainSize + 1; //+ terrain size gets us down to the next row
                     triangles[triIndex + 2] = vertIndex + terrainSize;
                     triangles[triIndex + 3] = vertIndex + terrainSize + 1;
                     triangles[triIndex + 4] = vertIndex;
                     triangles[triIndex + 5] = vertIndex + 1;
 
+                    //increment the triangle index
+                    //
                     triIndex += 6;
 
                 }
 
+                //increment vetext index
+                //
                 vertIndex++;
 
             }
         }
 
         // Create a new mesh and apply our mesh data to it.
+        //
         Mesh mesh = new Mesh();
         mesh.vertices = vertices;
         mesh.triangles = triangles;
         mesh.uv = uvs;
 
         // Finish off the mesh and set our meshFilter to use it.
+        //
         mesh.RecalculateNormals();
         meshFilter.mesh = mesh;
 
         // Create a simple texture. It's only one colour so it doesn't need to be bigger than 1x1.
+        //
         Texture2D texture = new Texture2D(1, 1);
         texture.SetPixel(0, 0, Color.red);
         texture.Apply();
 
         // Apply the texture to our material and apply the material to our MeshRenderer.
+        //
         material.mainTexture = texture;
         meshRenderer.material = material;
 

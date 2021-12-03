@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/ExploreScene.unity
     guid: 08ad6d20501ea324582f02edab130816
   - enabled: 1
-    path: Assets/Scenes/DodgeLevel.unity
+    path: Assets/Scenes/MiniGame.unity
     guid: 6cafdbfdb79eb9e4889e5789e6f2643e
   m_configObjects: {}

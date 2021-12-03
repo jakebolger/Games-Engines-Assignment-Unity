@@ -4,28 +4,38 @@ using UnityEngine;
 
 public class TerrainGeneratorForest : MonoBehaviour
 {
+    //integer that sets the size of the terrain and allows you to change it in the inspector
+    //
     public int terrainSize;
+    //float for the scale if the terrain
+    //
     public float terrainScale;
     public float heightMultiplier;
 
+    //reference for the forestgenerator script
+    //
     public ForrestGenerator Forest;
 
-    //two dimensional array
+    //two dimensional array, forest generator script accesses this heightmap
     //
     private float[,] heightMap;
 
+    //meshfilter material and meshrenderer variable.
+    //
     MeshFilter meshFilter;
     MeshRenderer meshRenderer;
     Material material;
 
     private void Start()
     {
-
+        //setting the varibales
+        //
         meshRenderer = gameObject.AddComponent<MeshRenderer>();
         meshFilter = gameObject.AddComponent<MeshFilter>();
         material = new Material(Shader.Find("Standard"));
 
-        // Validation check to ensure terrainSize is not smaller than forestSize, as this will create an indexOutOfBounds exception.
+        // Validation check to ensure terrainSize is bigger than forestSize, as this will create an indexOutOfBounds exception.
+        //
         if (terrainSize < Forest.forestSize)
             terrainSize = Forest.forestSize;
 
@@ -36,18 +46,24 @@ public class TerrainGeneratorForest : MonoBehaviour
         Forest.Generate(heightMap);
     }
 
+    //Getheight function, takes in a vector3 and gives it a position in unity.
+    //
     float GetHeight(Vector3 position)
     {
 
         // Return a float representing the height of the terrain at the given position in world space.
+        //
         return Mathf.PerlinNoise((position.x + 0.1f) / terrainSize * terrainScale, (position.z + 0.1f) / terrainSize * terrainScale) * heightMultiplier;
 
     }
 
+    //Generate heightmap function
+    //
     void GenerateHeightMap()
     {
 
         // Loop through each position in our terrain, get the height at that position, and put it in our heightMap array.
+        //
         for (int x = 0; x < terrainSize; x++)
         {
             for (int z = 0; z < terrainSize; z++)

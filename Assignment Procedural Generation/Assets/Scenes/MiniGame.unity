@@ -722,6 +722,14 @@ PrefabInstance:
       propertyPath: elements.Array.data[2].density
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4025460787508345846, guid: f1f7b2af45b29434da63cb112a048756, type: 3}
+      propertyPath: elements.Array.data[1].prefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 5859138465047952530, guid: f0f4bbfd1c294ba4a8ea9331f7972670, type: 3}
+    - target: {fileID: 4025460787508345846, guid: f1f7b2af45b29434da63cb112a048756, type: 3}
+      propertyPath: elements.Array.data[1].prefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 6480380473559681123, guid: bb46f7f7f598d0041bd6bb275190a99f, type: 3}
     - target: {fileID: 4025460787508345847, guid: f1f7b2af45b29434da63cb112a048756, type: 3}
       propertyPath: m_RootOrder
       value: 7

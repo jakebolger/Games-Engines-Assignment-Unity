@@ -30,7 +30,7 @@ public class TerrainGenerator1 : MonoBehaviour
         terrain.terrainData = GenerateTerrain(terrain.terrainData);
 
 
-        offsetX += Time.deltaTime * 5f;
+        //offsetX += Time.deltaTime * 1f;
     }
 
     TerrainData GenerateTerrain(TerrainData terrainData)

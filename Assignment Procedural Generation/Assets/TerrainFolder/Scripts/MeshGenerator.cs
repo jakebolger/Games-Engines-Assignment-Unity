@@ -11,13 +11,20 @@ using UnityEngine;
 //get rid of gizmos method
 // this is all to just generated mesh instantly
 
-[RequireComponent(typeof(MeshFilter))]
+[RequireComponent(typeof(MeshFilter))] //makes sure theres always a mesh filter
 public class MeshGenerator : MonoBehaviour
 {
-
+    //mesh varibale to store
+    //
     Mesh mesh;
 
+    
+    //creating array of vetices
+    //
     Vector3[] vertices;
+    
+    //array of triangles
+    //
     int[] triangles;
 
     public int xSize = 20;
@@ -26,7 +33,11 @@ public class MeshGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //creating new mesh object
+        //
         mesh = new Mesh();
+        //get mesh filter
+        //
         GetComponent<MeshFilter>().mesh = mesh;
         CreateShape();
         //StartCoroutine(CreateShape());
@@ -43,13 +54,18 @@ public class MeshGenerator : MonoBehaviour
 
     void CreateShape()
     {
+        //defining vertices
+        //
         vertices = new Vector3[(xSize + 1) * (zSize + 1)];
 
-        
+        //for loop to loop though heights
+        //
         for(int i = 0,  z = 0; z <= zSize; z++)
         {
             for(int x = 0; x <= xSize; x++)
             {
+                //using poerlin noise 
+                //
                 float y = Mathf.PerlinNoise(x * .1f, z * .1f) * 1f;
                 vertices[i] = new Vector3(x, y, z);
                 i++;
@@ -57,6 +73,8 @@ public class MeshGenerator : MonoBehaviour
             }
         }
 
+        //specifiying trinagles
+        //
         triangles = new int[xSize * zSize * 6];
 
         int vert = 0;
@@ -86,6 +104,8 @@ public class MeshGenerator : MonoBehaviour
         
     }
 
+    //to be able to use data from createshape function.
+    //
     void UpdateMesh()
     {
         mesh.Clear();

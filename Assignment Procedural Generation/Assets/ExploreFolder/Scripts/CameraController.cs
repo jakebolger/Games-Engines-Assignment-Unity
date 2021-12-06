@@ -4,25 +4,38 @@ using System.Collections;
 public class CameraController : MonoBehaviour
 {
 
-    
 
-    float mainSpeed = 20.0f; //regular speed
-    float shiftAdd = 250.0f; //multiplied by how long shift is held.  Basically running
-    float maxShift = 1000.0f; //Maximum speed when holdin gshift
-    float camSens = 0.05f; //How sensitive it with mouse
-    private Vector3 lastMouse = new Vector3(255, 255, 255); //kind of in the middle of the screen, rather than at the top (play)
+    //regular speed
+    //
+    float mainSpeed = 20.0f;
+    //multiplied by how long shift is held.  Basically running
+    //
+    float shiftAdd = 250.0f;
+    //Maximum speed when holdin gshift
+    //
+    float maxShift = 1000.0f;
+    //How sensitive it with mouse
+    //
+    float camSens = 0.05f;
+    //kind of in the middle of the screen, rather than at the top (play)
+    //
+    private Vector3 lastMouse = new Vector3(255, 255, 255); 
+    
     private float totalRun = 1.0f;
 
     void Update()
     {
+        //Mouse  camera angle done.
+        //
         lastMouse = Input.mousePosition - lastMouse;
         lastMouse = new Vector3(-lastMouse.y * camSens, lastMouse.x * camSens, 0);
         lastMouse = new Vector3(transform.eulerAngles.x + lastMouse.x, transform.eulerAngles.y + lastMouse.y, 0);
         transform.eulerAngles = lastMouse;
         lastMouse = Input.mousePosition;
-        //Mouse  camera angle done.  
+        
 
         //Keyboard commands
+        //
         float f = 0.0f;
         Vector3 p = GetBaseInput();
         if (p.sqrMagnitude > 0)

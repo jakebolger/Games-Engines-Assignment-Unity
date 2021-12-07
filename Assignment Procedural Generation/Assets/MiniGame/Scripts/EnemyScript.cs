@@ -31,13 +31,13 @@ public class EnemyScript : MonoBehaviour
 
         //if statement to set what distance the enemy follows the player
         //
-        if(Distance <= 5)
+        if(Distance <= 10)
         {
             isAngered = true;
         }
         //tells enemy when to give up
         //
-        if(Distance > 5f)
+        if(Distance > 10f)
         {
             isAngered = false;
         }

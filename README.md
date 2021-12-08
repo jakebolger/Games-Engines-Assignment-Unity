@@ -19,3 +19,7 @@ In this section the game mechanics and how it works will be discussed and explai
 # List of Classes/Assets in the Project and whether they were made yourself or modified or if they are from a Source, with References.
 
 # References
+
+# What I am most proud of in the Assignment
+
+# Other Information

@@ -7,6 +7,7 @@ public class PlayerSpawn : MonoBehaviour
     //
     [SerializeField] private Transform player;
     [SerializeField] private Transform respawnPoint;
+    
 
     //method that uses OnTriggerEnter so that when the marblePlayer collides with the trigger it respawns at the respawn point.
     //
@@ -14,4 +15,6 @@ public class PlayerSpawn : MonoBehaviour
     {
         player.transform.position = respawnPoint.transform.position;
     }
+
+    
 }

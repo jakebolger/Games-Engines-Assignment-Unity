@@ -14,7 +14,7 @@ To use this project you must run the Start Menu scene in the Unity Editor, from 
 Next, to access the Mini Game you will need to select the Mini Game button from the Main Menu. The game will bring you to the mini game where you can use the controls 'W', 'A', 'S', 'D', to move the marble player on the rotating panel. The aim of the game is to try and stay on the panel without gettin knocked off by the Enemy player or touching any of the red obstacles on the panel. If you fall off or touch the obstacles, the player will respawn where you started.
 
 # How it Works
-In this section the game mechanics and how it works will be discussed and explained.
+In this section the game mechanics and how the game works will be discussed and explained.
 
 # List of Classes/Assets in the Project and whether they were made yourself or modified or if they are from a Source, with References.
 

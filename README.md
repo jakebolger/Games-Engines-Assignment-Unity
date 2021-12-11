@@ -7,7 +7,7 @@ Student Number: C18395341
 Class Group: TU857
 
 # Description of the Project
-The goal for this project was to create a procedurally generated system in Unity. This System comprises of three different Scenes, a start Menu, a procedurally generated nature environemt and a mini game with a procedurally generated terrain as its background. The menu has three options to chose from, Explore, Mini Game, and Quit. The procedurally generated terains are red forest for bothe the exlpore option and the Mini Game. The Explore scene also has a beach with a generated Sea.
+The goal for this project was to create a procedurally generated system in Unity. This System comprises of three different Scenes, a start Menu, a procedurally generated nature environemt and a mini game with a procedurally generated terrain as its background. The menu has three options to chose from, Explore, Mini Game, and Quit. The procedurally generated terains are red forest for both the exlpore option and the Mini Game. The Explore scene also has a beach with a procedurally generated Sea.
 
 # Instructions for use
 To use this project you must run the Start Menu scene in the Unity Editor, from there you can select and option from the Menu. When you select the Explore button, the game will bring you to the explore scene where you will be brought through a tour of the enviornment getting a look at the forrest and the beach.
@@ -15,6 +15,11 @@ Next, to access the Mini Game you will need to select the Mini Game button from 
 
 # How it Works
 In this section the game mechanics and how the game works will be discussed and explained.
+Firstly the Start Menu will be explained. Then, the explore scene will be exaplined along with the pause menu. Finally, the Mini Game Scene will be explained.
+when explaininng how each secne works, the methods of creating the scenes will be outlined aswell as how they were coded. The techniques used to write the scripts in C#will be discussed and the different models and assets will be shown and how they were created.
+
+The Main Menu has three different options to choose from 'EXPLORE', 'MINI GAME', and 'QUIT'. The UI for the menu was created by creating a canvas object in the hierarchy and adding buttons and text to it.
+
 
 # List of Classes/Assets in the Project and whether they were made yourself or modified or if they are from a Source, with References.
 | Scripts and Assets | Source |

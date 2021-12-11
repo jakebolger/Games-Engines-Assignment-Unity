@@ -8334,7 +8334,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1537203139321344520, guid: 7821b901e80b7cc4dadee482ebc26e82, type: 3}
       propertyPath: m_Name
-      value: Canvas
+      value: PauseMenu
       objectReference: {fileID: 0}
     - target: {fileID: 1537203139321344524, guid: 7821b901e80b7cc4dadee482ebc26e82, type: 3}
       propertyPath: m_Pivot.x

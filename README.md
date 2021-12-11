@@ -22,31 +22,7 @@ The Main Menu has three different options to choose from 'EXPLORE', 'MINI GAME',
 
 Below is the code use in the MainMenu class to give the buttons functions so they would switch to the required scenes:
 
-//
-public class MainMenu : MonoBehaviour
-{
-    //function for Explore button game that accesses scenmanager and sets build index + 1.
-    //
-    public void PlayGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
-
-    //function for mini game button game that accesses scenmanager and sets build index + 2.
-    //
-    public void PlayGameMini()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
-    }
-
-    //function for quit buttoin than displays Quit! in console.
-    //
-    public void QuitGame()
-    {
-        Debug.Log("Quit!");
-        Application.Quit();
-    }
-}
+![image](https://user-images.githubusercontent.com/55544176/145683479-e0d74862-33bd-4310-9d11-742d95f88fc0.png)
 
 
 # List of Classes/Assets in the Project and whether they were made yourself or modified or if they are from a Source, with References.

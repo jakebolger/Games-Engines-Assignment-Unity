@@ -32,7 +32,8 @@ The Next Scene is the Explore Scene. this scene consists or a procedurally gener
 
 The 'PauseMenu' Script is aattached to the PauseMenu canvas object and it allows the user to pause the game by pressing the ESC button on the keyboard, and select either resume or exit which brings the user back to the main menu. Below is the Code used in the Pause Script.
 
-![image](https://user-images.githubusercontent.com/55544176/145684059-c52b59da-e518-41f5-8f18-aa0df1e783e8.png)
+![image](https://user-images.githubusercontent.com/55544176/145684090-03fe36c7-3bfc-423e-9477-e84dbdc89925.png)
+
 
 
 # List of Classes/Assets in the Project and whether they were made yourself or modified or if they are from a Source, with References.

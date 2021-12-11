@@ -22,6 +22,7 @@ The Main Menu has three different options to choose from 'EXPLORE', 'MINI GAME',
 
 Below is the code use in the MainMenu class to give the buttons functions so they would switch to the required scenes:
 
+//
 public class MainMenu : MonoBehaviour
 {
     //function for Explore button game that accesses scenmanager and sets build index + 1.

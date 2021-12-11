@@ -21,7 +21,7 @@ when explaininng how each secne works, the methods of creating the scenes will b
 The Main Menu has three different options to choose from 'EXPLORE', 'MINI GAME', and 'QUIT'. The UI for the menu was created by creating a canvas object in the hierarchy, creating a panel, adding a script to the panel, and then adding buttons and text to the Panel. the script that was added to the Main Menu Game Object was a script called 'Main Menu.cs'.
 
 Below is the code use in the MainMenu class to give the buttons functions so they would switch to the required scenes:
-'''c#
+
 public class MainMenu : MonoBehaviour
 {
     //function for Explore button game that accesses scenmanager and sets build index + 1.

@@ -18,7 +18,34 @@ In this section the game mechanics and how the game works will be discussed and 
 Firstly the Start Menu will be explained. Then, the explore scene will be exaplined along with the pause menu. Finally, the Mini Game Scene will be explained.
 when explaininng how each secne works, the methods of creating the scenes will be outlined aswell as how they were coded. The techniques used to write the scripts in C#will be discussed and the different models and assets will be shown and how they were created.
 
-The Main Menu has three different options to choose from 'EXPLORE', 'MINI GAME', and 'QUIT'. The UI for the menu was created by creating a canvas object in the hierarchy and adding buttons and text to it.
+The Main Menu has three different options to choose from 'EXPLORE', 'MINI GAME', and 'QUIT'. The UI for the menu was created by creating a canvas object in the hierarchy, creating a panel, adding a script to the panel, and then adding buttons and text to the Panel. the script that was added to the Main Menu Game Object was a script called 'Main Menu.cs'.
+
+Below is the code use in the MainMenu class to give the buttons functions so they would switch to the required scenes:
+'''c#
+public class MainMenu : MonoBehaviour
+{
+    //function for Explore button game that accesses scenmanager and sets build index + 1.
+    //
+    public void PlayGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    //function for mini game button game that accesses scenmanager and sets build index + 2.
+    //
+    public void PlayGameMini()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+    }
+
+    //function for quit buttoin than displays Quit! in console.
+    //
+    public void QuitGame()
+    {
+        Debug.Log("Quit!");
+        Application.Quit();
+    }
+}
 
 
 # List of Classes/Assets in the Project and whether they were made yourself or modified or if they are from a Source, with References.

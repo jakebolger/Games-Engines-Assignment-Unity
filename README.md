@@ -28,11 +28,50 @@ Next Image Shows the Main Menu Screen:
 
 ![image](https://user-images.githubusercontent.com/55544176/145683605-f252c2f6-ecdf-43f9-94fc-932ba778726d.png)
 
-The Next Scene is the Explore Scene. this scene consists or a procedurally generated terrain and forest, with a procedurally generated Sea. This scene allows the user to look at the terrain through the main camera. the camera moves on a specific track thorughout the scene to give the user a look at all the terrain. The explore scene has Five Scripts. 'PauseMenu', 'MeshGenerator', 'ForrestGenerator', 'TerrainGeneratorForest' and a 'CameraPath' script.
+The Next Scene is the Explore Scene. This scene consists or a procedurally generated terrain and forest, with a procedurally generated Sea. This scene allows the user to look at the terrain through the main camera. The camera moves on a specific track thorughout the scene to give the user a look at all the terrain. The explore scene has Five Scripts. 'PauseMenu', 'MeshGenerator', 'ForrestGenerator', 'TerrainGeneratorForest' and a 'CameraPath' script.
 
-The 'PauseMenu' Script is aattached to the PauseMenu canvas object and it allows the user to pause the game by pressing the ESC button on the keyboard, and select either resume or exit which brings the user back to the main menu. Below is the Code used in the Pause Script.
+The 'PauseMenu' Script is attached to the PauseMenu canvas object and it allows the user to pause the game by pressing the ESC button on the keyboard, and select either resume or exit which brings the user back to the main menu. Below is the Code used in the Pause Script and an image of the pause menu. The PauseMenu can be used in the mini game and the Explore scene.
 
 ![image](https://user-images.githubusercontent.com/55544176/145684090-03fe36c7-3bfc-423e-9477-e84dbdc89925.png)
+
+![image](https://user-images.githubusercontent.com/55544176/145817887-ed22eae9-a57a-4c5e-861a-fd9e31146d10.png)
+
+The 'MeshGenerator' script us used to generate the Sea using perlin noise. this script was taken from a tutorial and then modified. the gizmos method and coroutine were taken out and the script was modified in other areas to work accordingly.
+
+![image](https://user-images.githubusercontent.com/55544176/145819430-422ea73f-dee4-4a47-92e6-88ad553d7ed8.png)
+![image](https://user-images.githubusercontent.com/55544176/145819441-e47aa316-706b-48b7-8b27-e7df1dadc6e3.png)
+
+Image of Sea Below:
+
+![image](https://user-images.githubusercontent.com/55544176/145819674-9839da20-eef6-4c07-a462-bea8ae88db0f.png)
+
+The two main scripts that were used to generate procedural terrain and a forest to go with it were the 'forrestGenerator' and 'TerrainGeneratorForest' scripts. These scripts were used to generate the forests in all the scenes.
+
+A forest game object was created and the 'forrestGenerator script was attached to it. This script allows you to choose the size, element spacing and the different models of trees, rocks or bushes you want to put into your forest. this was done bycreating arrays for the prefabs to go in. Then multiple vector3s were created to randomize the placements of all the prefabs to make the forest look more realistic.
+
+code for size variable, spacing varaible and array for the prefabs to be added to:
+
+![image](https://user-images.githubusercontent.com/55544176/145821614-f8a12918-4f11-4dd9-a0dd-0691dc645a4f.png)
+
+Snippet of rnadomizing the rotation for the vector3 rotation:
+
+![image](https://user-images.githubusercontent.com/55544176/145821713-dc945d38-3295-43fb-9390-6718fbc7f5ef.png)
+
+the TerrainGneratorForest script uses perlin noise to create the terrain. because I have created a forest i needed to make sure that the forest was placed at the correct positions as the terrain. I did this by passing the heightmap array from this script in the forestGnerator script. this means that when the forest generates it generates at the same heights as the proccedural terrain and os not spawned in at a random position.
+
+Snippets of the forrestgenrator scripts using the heightmap array and the tearrinGneratorforest script creating the two dimensional array that the forest script uses to access the heighmap alongside the reference for the forestgenerator script:
+
+![image](https://user-images.githubusercontent.com/55544176/145822617-2ed5de6b-ae95-4344-9588-13ce52093e8f.png)
+![image](https://user-images.githubusercontent.com/55544176/145822669-ebb18064-e715-4989-afff-18d59c151855.png)
+
+
+
+
+
+
+
+
+
 
 
 

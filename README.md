@@ -86,6 +86,27 @@ Below is code of the Gizmos function and the track in the scene view:
 ![image](https://user-images.githubusercontent.com/55544176/145824243-f6ab1cc6-c3d8-45e3-ae4d-ea6736bb65ad.png)
 ![image](https://user-images.githubusercontent.com/55544176/145824379-53ed54c2-888e-4f55-8736-fa0f895dcf4d.png)
 
+The Next scene is the minigame scene. This scene uses 4 scripts: the 'EnemyScript', 'MarbleMove', 'OrbittingScript' and the 'PlayerSpawn'.
+
+This scene uses the terrain generated scripts as well to create the forest background. The aim of the mini game is to try stay on the panel without falling off or touching an obstacle for as long as possible.
+
+![image](https://user-images.githubusercontent.com/55544176/145825042-82474bc7-bce2-46b7-8587-9e1d60a41c66.png)
+
+The Enemy model will try knock the marble player off. This marble player use a simple movementr script,'MarbleMove'. this allows the marble to move left right forward and backwardsCode Snippet:
+
+![image](https://user-images.githubusercontent.com/55544176/145825275-dd1bfc08-a710-42f7-b48b-15770dcac473.png)
+
+The enemy NPC uses an Enemyscript which makes the enemy a NavMeshAgent. This code allows the enemy to follow the player around and try push him into and obstacle or off the platform. the panel area was baked to allow this also.
+
+Code snippet of Uodat method in class:
+![image](https://user-images.githubusercontent.com/55544176/145825865-f8466aea-7284-4756-b3ec-ae053b1c818a.png)
+
+In this scene there is a script put on the main camera to allow the camera movement of rotating around the panel to add more comlexitiy and to make it look better. The script rotates the camera around a centerpoint using a rotate function.
+
+To allow the player to respawn once it hit the obstacles or falls off. a trigger was created and the mesh renderere was turned off so the user cant see it. a scropt was then attacxhed to this object using a OnTrggerEnter and collider to respawn the player at the set respawn position. This script was attached to the obstacle as well.
+
+Snippet:
+![image](https://user-images.githubusercontent.com/55544176/145826658-babc3a42-7da1-494b-abf4-6fcf27caef3f.png)
 
 
 

@@ -144,5 +144,6 @@ All ASSETS NOT lISTED THAT ARE IN UNITY PROJECT, WERE NOT USED IN FINAL BUILD AN
 # References
 
 # What I am most proud of in the Assignment
+In this assignment I am most prud oif the fact that i have multiple scenes for better complexity. I added more features rather than just procedural geration and was able to create all my forest models myself. I used the scenemanager to create menus which we hadnt been taught in the course which I was proud of.
 
 # Other Information

@@ -64,13 +64,27 @@ Snippets of the forrestgenrator scripts using the heightmap array and the tearri
 ![image](https://user-images.githubusercontent.com/55544176/145822617-2ed5de6b-ae95-4344-9588-13ce52093e8f.png)
 ![image](https://user-images.githubusercontent.com/55544176/145822669-ebb18064-e715-4989-afff-18d59c151855.png)
 
+Forest generated with terrain:
+![image](https://user-images.githubusercontent.com/55544176/145822915-cf5e7382-51e4-4fac-b43b-56c50cc7e59e.png)
+
+All the prefabs that were used and put into the elements array were created by creating a tree object and modelling the trees from there. all the mmodelling was done myself. The materials were created by creating a new material and using png images from google images to create the bark materials and the leaf materials.
+
+When creating the trees and the bushes I worked in a separate scene:
+Below are the material and models i create aloing with the scene i created it in:
+
+![image](https://user-images.githubusercontent.com/55544176/145823376-224f1960-7479-4079-843b-04002464567d.png)
 
 
+All models and material for the forest prefabs were put into a separate folder:
+![image](https://user-images.githubusercontent.com/55544176/145823754-b5aef7d8-75ff-4aeb-be6b-ec9478c21278.png)
 
 
+In the Explore scene the CameraPath script was used to create a track for the camera to take. This was done by creating tiny target sphere ojects and using the script to create gizmos from each target to the others. Red lines were drawn to show track route. 
 
+Below is code of the Gizmos function and the track in the scene view:
 
-
+![image](https://user-images.githubusercontent.com/55544176/145824243-f6ab1cc6-c3d8-45e3-ae4d-ea6736bb65ad.png)
+![image](https://user-images.githubusercontent.com/55544176/145824379-53ed54c2-888e-4f55-8736-fa0f895dcf4d.png)
 
 
 

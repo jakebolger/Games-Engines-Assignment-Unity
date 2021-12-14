@@ -47,7 +47,7 @@ Image of Sea Below:
 
 The two main scripts that were used to generate procedural terrain and a forest to go with it were the 'forrestGenerator' and 'TerrainGeneratorForest' scripts. These scripts were used to generate the forests in all the scenes.
 
-A forest game object was created and the 'forrestGenerator script was attached to it. This script allows you to choose the size, element spacing and the different models of trees, rocks or bushes you want to put into your forest. this was done bycreating arrays for the prefabs to go in. Then multiple vector3s were created to randomize the placements of all the prefabs to make the forest look more realistic.
+A forest game object was created and the 'forrestGenerator script was attached to it. This script allows you to choose the size, element spacing and the different models of trees, rocks or bushes you want to put into your forest. this was done by creating arrays for the prefabs to go in. Then multiple vector3s were created to randomize the placements of all the prefabs to make the forest look more realistic.
 
 code for size variable, spacing varaible and array for the prefabs to be added to:
 
@@ -167,10 +167,9 @@ The Dust object, which is made using the particle system was a downloaded asset.
 # References
 
 # What I am most proud of in the Assignment
-In this assignment I am most prud oif the fact that i have multiple scenes for better complexity. I added more features rather than just procedural geration and was able to create all my forest models myself. I used the scenemanager to create menus which we hadnt been taught in the course which I was proud of.
+In this assignment I am most proud of the fact that i have multiple scenes for better complexity. I added more features rather than just procedural generation and was able to create all my forest models myself. I used the scenemanager to create menus which we hadnt been taught in the course which I was proud of.
 
-ERRORS:
 
-Another Part i was really proud of was that i was getting an error with the loghting and renedering my scenes in unity when using the scenmanger. I figured out that this was because i hadnt built my project. after i did the erros were fixed.
+Another Part I was really proud of was that I was getting an error with the lighting and renedering my scenes in unity when using the scenemanger. I figured out that this was because i hadnt built my project. After I did the erros were fixed. Being Able to build the project was another thing I was proud of.
 
 # Other Information

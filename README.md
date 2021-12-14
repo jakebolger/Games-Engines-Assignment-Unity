@@ -120,6 +120,8 @@ For the beach object this is just a plane model with a material from the asset s
 
 The Dust object, which is made using the particle system was a downloaded asset. this asset is in bothe the mini game and the explore scene.
 
+the skybox material was taken from the asset store.
+
 
 
 # List of Classes/Assets in the Project and whether they were made yourself or modified or if they are from a Source, with References.
@@ -144,12 +146,12 @@ The Dust object, which is made using the particle system was a downloaded asset.
 | Mini Game Prefabs | Self made  |
 | EnemyScript.cs | Self Written  |
 | MarbleMove.cs | Self Written  |
-| OrbittingScript.cs | Self Written, Used Tutorial for help |
+| OrbittingScript.cs | Self Written |
 | PlayerSpawn.cs | Self Written  |
 | SkyBox Assets | Downloaded from Asset Store |
 | TerrainGeneratorForest.cs | Self Written  |
 | ForrestGenerator.cs | Self Written  |
-| MeshGeneratort.cs | Modified Perlin Noise Script given by Lecturer  |
+| MeshGeneratort.cs | Modified Perlin Noise Script From brackeys tutorial  |
 | All Tree Models | Self Made |
 | All Bush Models | Self Made |
 | All Grass Models | Self Made |
@@ -166,6 +168,16 @@ The Dust object, which is made using the particle system was a downloaded asset.
 
 # References
 
+https://assetstore.unity.com/ - asset store
+
+https://www.youtube.com/watch?v=JivuXdrIHK0 - Menus
+
+https://www.youtube.com/watch?v=64NblGkAabk&t=27s - Mesh Gen
+
+https://mixkit.co/free-sound-effects/forest/ - audio
+
+https://assetstore.unity.com/packages/2d/textures-materials/sky/skybox-series-free-103633 - skybox
+
 # What I am most proud of in the Assignment
 In this assignment I am most proud of the fact that i have multiple scenes for better complexity. I added more features rather than just procedural generation and was able to create all my forest models myself. I used the scenemanager to create menus which we hadnt been taught in the course which I was proud of.
 
@@ -177,6 +189,6 @@ Below is the Icon created on my desktop for my game that i can launch and play:
 ![image](https://user-images.githubusercontent.com/55544176/145997665-0e5b2654-6507-46e7-a85d-325a6e1e5bc9.png)
 
 
-
-
 # Other Information
+
+For Future work if I was going to change anything about this project, I would change the Mini Game. Because this project was more focused on procedural generation, the mini game lacked rules. the aim of the mini game was to add more complexcity to the project rather than it solely just being procedural generation by Addin gthe Ai pathfinding element, the camera rotation and the player movement and the respawn script.

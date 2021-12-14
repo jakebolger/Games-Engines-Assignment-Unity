@@ -172,4 +172,11 @@ In this assignment I am most proud of the fact that i have multiple scenes for b
 
 Another Part I was really proud of was that I was getting an error with the lighting and renedering my scenes in unity when using the scenemanger. I figured out that this was because i hadnt built my project. After I did the erros were fixed. Being Able to build the project was another thing I was proud of.
 
+Below is the Icon created on my desktop for my game that i can launch and play:
+
+![image](https://user-images.githubusercontent.com/55544176/145997665-0e5b2654-6507-46e7-a85d-325a6e1e5bc9.png)
+
+
+
+
 # Other Information

@@ -108,16 +108,37 @@ To allow the player to respawn once it hit the obstacles or falls off. a trigger
 Snippet:
 ![image](https://user-images.githubusercontent.com/55544176/145826658-babc3a42-7da1-494b-abf4-6fcf27caef3f.png)
 
+Things to note:
+
+All the audio sources were downloaded from mixkit and imported into unity and attached to a Game Object called BackgroundAudio with an audio source. There are three audio tracks, 'small waves', 'european forest ambnience' and 'adventure puzzle medieval' music.
+
+![image](https://user-images.githubusercontent.com/55544176/145994621-887d2a8b-f023-4f12-816f-5c06ca2acd9e.png)
+
+Windzones were also created in the explore scene to make the forest blow in the wind.
+
+For the beach object this is just a plane model with a material from the asset store put onto it. the rocks on the beach were made by creating a rock material and adding it to spheres.
+
+The Dust object, which is made using the particle system was a downloaded asset. this asset is in bothe the mini game and the explore scene.
+
 
 
 # List of Classes/Assets in the Project and whether they were made yourself or modified or if they are from a Source, with References.
 | Scripts and Assets | Source |
 | ------------- | ------------- |
 | BackgoundAudio Prefab  | Downloaded Audio Source from "Mixkit.com"  |
+| FollowPointParent | Self made  |
 | Wall Prefabs  | Self made  |
+| Beach Prefab  | Self made  |
+| Terrain  | Self made  |
+| Forrest  | Self made  |
+| Windzone  | Self made  |
 | CameraPath.cs  | Self Written, Used Gizmos Lab for Reference  |
 | Pause Menu and prefabs | Self made  |
 | PauseMenu.cs  | Followed Tutorial  |
+| RespawnFallTrigger  | Self made  |
+| MarblePlayer  | Self made  |
+| Enemy  | Self made  |
+| Rotating panel  | Self made  |
 | MainMenu.cs  | Self Written  |
 | Mini Game Materials  | Self made  |
 | Mini Game Prefabs | Self made  |
@@ -138,8 +159,10 @@ Snippet:
 | UI Canvas's for menu's | Self Made |
 | Dust Particle system prefab | Downloaded asset |
 | River Water Material | Downloaded asset |
+| Beach Material | Downloaded asset |
 
-All ASSETS NOT lISTED THAT ARE IN UNITY PROJECT, WERE NOT USED IN FINAL BUILD AND WERE NOT USED IN THE ASSIGNMENT.
+
+
 
 # References
 

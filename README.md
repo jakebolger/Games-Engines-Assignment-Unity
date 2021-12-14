@@ -71,6 +71,11 @@ Snippets of the forrestgenrator scripts using the heightmap array and the tearri
 Forest generated with terrain:
 ![image](https://user-images.githubusercontent.com/55544176/145822915-cf5e7382-51e4-4fac-b43b-56c50cc7e59e.png)
 
+Images of the forest randomly gerated correctly at perlin noise terrain heights:
+![image](https://user-images.githubusercontent.com/55544176/146070395-a8f27afa-4c9c-42c0-9aad-69b1e3917b3a.png)
+Underneath view:
+![image](https://user-images.githubusercontent.com/55544176/146070415-a73baebe-7a02-4235-8b98-23834ca80ac4.png)
+
 All the prefabs that were used and put into the elements array were created by creating a tree object and modelling the trees from there. all the mmodelling was done myself. The materials were created by creating a new material and using png images from google images to create the bark materials and the leaf materials.
 
 When creating the trees and the bushes I worked in a separate scene:

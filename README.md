@@ -7,7 +7,8 @@ Student Number: C18395341
 Class Group: TU857
 
 # Description of the Project
-The goal for this project was to create a procedurally generated system in Unity. This System comprises of three different Scenes, a start Menu, a procedurally generated nature environemt and a mini game with a procedurally generated terrain as its background. The menu has three options to chose from, Explore, Mini Game, and Quit. The procedurally generated terains are red forest for both the exlpore option and the Mini Game. The Explore scene also has a beach with a procedurally generated Sea.
+The goal for this project was to create a procedurally generated system in Unity. This System comprises of three different Scenes, a start Menu, a procedurally generated nature environemt and a mini game with a procedurally generated terrain as its background. The menu has three options to chose from, Explore, Mini Game, and Quit. The procedurally generated terains are red forest for both the exlpore option and the Mini Game. The Explore scene also has a beach with a procedurally generated Sea. Everytime you play the mini game or the explore scene, the forest will generate randomly.
+
 
 link to youtube video, watch in highest quality if able:
 https://www.youtube.com/watch?v=8L8Me2urSU8

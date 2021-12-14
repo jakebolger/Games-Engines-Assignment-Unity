@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+//Jake Bolger - C18395341
+//
 public class ForrestGenerator : MonoBehaviour
 {
     //integer that sets the size of the forest and allows you to change it in the inspector

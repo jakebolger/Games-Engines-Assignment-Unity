@@ -2,8 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+//Jake Bolger - C18395341
+//
 public class TerrainGeneratorForest : MonoBehaviour
 {
+
+    //two dimensional array, forest generator script accesses this heightmap
+    //
+    private float[,] heightMap;
+    
     //integer that sets the size of the terrain and allows you to change it in the inspector
     //
     public int terrainSize;
@@ -16,9 +24,6 @@ public class TerrainGeneratorForest : MonoBehaviour
     //
     public ForrestGenerator Forest;
 
-    //two dimensional array, forest generator script accesses this heightmap
-    //
-    private float[,] heightMap;
 
     //meshfilter material and meshrenderer variable.
     //

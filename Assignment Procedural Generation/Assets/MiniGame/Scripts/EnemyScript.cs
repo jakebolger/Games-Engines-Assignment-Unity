@@ -13,9 +13,9 @@ public class EnemyScript : MonoBehaviour
     //
     public float Distance;
 
-    //boolean varibale for isAngered so the agent knows when to follow and not follow the player.
+    //boolean varibale for isAlert so the agent knows when to follow and not follow the player.
     //
-    public bool isAngered;
+    public bool isAlert;
 
     public NavMeshAgent agent;
 
@@ -33,25 +33,25 @@ public class EnemyScript : MonoBehaviour
         //
         if(Distance <= 10)
         {
-            isAngered = true;
+            isAlert = true;
         }
         //tells enemy when to give up
         //
         if(Distance > 10f)
         {
-            isAngered = false;
+            isAlert = false;
         }
-        //if isangerd to false. starts to follow player if its close.
+        //if isAlert to false. starts to follow player if its close.
         //
-        if (isAngered)
+        if (isAlert)
         {
 
             agent.isStopped = false;
             agent.SetDestination(Player.transform.position);
         }
-        //if its not angered set isstopped top true which stops the enemy if you get too far away.
+        //if its not alert set isstopped top true which stops the enemy if you get too far away.
         //
-        if (!isAngered)
+        if (!isAlert)
         {
             agent.isStopped = true;
         }

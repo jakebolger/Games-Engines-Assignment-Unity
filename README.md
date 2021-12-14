@@ -141,7 +141,7 @@ the skybox material was taken from the asset store.
 | MarblePlayer  | Self made  |
 | Enemy  | Self made  |
 | Rotating panel  | Self made  |
-| MainMenu.cs  | Self Written  |
+| MainMenu.cs  | Brackeys tutorial  |
 | Mini Game Materials  | Self made  |
 | Mini Game Prefabs | Self made  |
 | EnemyScript.cs | Self Written  |
@@ -149,8 +149,8 @@ the skybox material was taken from the asset store.
 | OrbittingScript.cs | Self Written |
 | PlayerSpawn.cs | Self Written  |
 | SkyBox Assets | Downloaded from Asset Store |
-| TerrainGeneratorForest.cs | Self Written  |
-| ForrestGenerator.cs | Self Written  |
+| TerrainGeneratorForest.cs | Self Written using the help of program from lecturer.  |
+| ForrestGenerator.cs | Followed tutorial but modified to make more suited to this project, some self written to be able to work with the terrain. |
 | MeshGeneratort.cs | Modified Perlin Noise Script From brackeys tutorial  |
 | All Tree Models | Self Made |
 | All Bush Models | Self Made |
@@ -165,7 +165,6 @@ the skybox material was taken from the asset store.
 
 
 
-
 # References
 
 https://assetstore.unity.com/ - asset store
@@ -177,6 +176,8 @@ https://www.youtube.com/watch?v=64NblGkAabk&t=27s - Mesh Gen
 https://mixkit.co/free-sound-effects/forest/ - audio
 
 https://assetstore.unity.com/packages/2d/textures-materials/sky/skybox-series-free-103633 - skybox
+
+https://www.youtube.com/watch?v=604lmtHhcQs&t=68s - Forest script
 
 # What I am most proud of in the Assignment
 In this assignment I am most proud of the fact that i have multiple scenes for better complexity. I added more features rather than just procedural generation and was able to create all my forest models myself. I used the scenemanager to create menus which we hadnt been taught in the course which I was proud of.
